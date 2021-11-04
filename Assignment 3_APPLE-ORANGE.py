@@ -23,6 +23,6 @@ def get_totalPrice():
     printTotal(_totalPrice=totalPrice)
 
 def printTotal(_totalPrice):
-    print(f"\nThe total amount of your purchase is {_totalPrice:} pesos.\n")
+    print(f"\nThe total amount of your purchase is {_totalPrice} pesos.\n")
 
 get_totalPrice()
