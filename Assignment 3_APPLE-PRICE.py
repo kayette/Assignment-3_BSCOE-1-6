@@ -30,6 +30,10 @@ def finalTotal(getAppleAmountF,changeTotal):
         return print(f"\nYou can buy {getAppleAmountF} apple and your change is {changeTotal:,.2f} pesos.\n")
     elif (getAppleAmountF == 1) and (changeTotal == 1):
         return print(f"\nYou can buy {getAppleAmountF} apple and your change is {changeTotal:,.2f} peso.\n")
+    elif (getAppleAmountF > 1) and (changeTotal == 0):
+        return print(f"\nYou can buy {getAppleAmountF} apples and you have no more change.\n")
+    elif (getAppleAmountF == 1) and (changeTotal == 0):
+        return print(f"\nYou can buy {getAppleAmountF} apple and you have no more change.\n")
     else:
         return print(f"\nYou cannot buy any apples. You need {need:,.2f} more peso to complete a purchase.\n")
 
